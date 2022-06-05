@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label for="question">Enter your question:</label>
+<input id="question" type="text" placeholder="How to oder pizza?"/>
+
+<script>
+    let inputEl = document.getElementById('question').value;
+</script>
+
+<button onclick="document.location='https://api.telegram.org/bot5455902096:AAGcjGdlwQdNW71ZuOIsXcJyP-_NESskukY/sendMessage?chat_id=-799113402&text='+document.getElementById('question').value+'&parse_mode=HTML'">Send</button>
+
+</body>
+</html>
+
+
+
